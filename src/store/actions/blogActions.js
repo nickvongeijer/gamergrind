@@ -3,7 +3,7 @@ export const createPost = (post) => {
         // make async call to database
         const firestore = getFirestore();
         firestore.collection('posts').add({
-          ..post,
+          ...post,
           author: 'Evan',
           authId: 12345,
           createdAt: new Date()
