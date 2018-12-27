@@ -2,6 +2,8 @@ import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import { connect } from 'react-redux'
 import BlogList from './BlogList'
+import { firestoreConnect } from 'react-redux-firebase'
+import { compose } from 'redux'
 
 
 class Blog extends React.Component {
@@ -31,7 +33,7 @@ class Blog extends React.Component {
               items:2
           }
       };
-		
+
       // // Dynamic Blog Data Easy to Update
       // let data = [
       //   {title: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.', link:'blog-details', date:'28 December 2017', photo:'9.jpg', username:'Wala Boni', hits:'10', comments:'15'},
@@ -91,9 +93,15 @@ class Blog extends React.Component {
 }
 
 const mapStateToProps = (state) => {
+  console.log(state)
    return {
       posts: state.blog.posts
    }
 }
 
-export default connect(mapStateToProps)(Blog);
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([
+    { collection: 'posts' }
+  ])
+)(Blog);
