@@ -4,9 +4,7 @@ export const createPost = (post) => {
         const firestore = getFirestore();
         firestore.collection('posts').add({
           ...post,
-          author: 'Evan',
           authId: 12345,
-          createdAt: new Date()
         }).then(() => {
         dispatch({ type: 'CREATE_POST', post })
       }).catch((err) => {
