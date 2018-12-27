@@ -2,7 +2,7 @@ import React from 'react';
 
 class CreatePost extends React.Component {
   render() {
-		
+
   	return (
   		<section className="authentication-form download">
           <div className="innerpage-decor">

@@ -19,6 +19,7 @@ class CreatePost extends Component {
         //console.log('submit')
         this.props.createPost();
     }
+    
     render() {
         console.log('create post');
         return (
@@ -42,7 +43,7 @@ class CreatePost extends Component {
                                             <div className="col-sm-12 col-md-6 md-fgrup-margin">
                                                 <input type="text" className="form-control" id="author" placeholder="Author" required="required" onChange={this.handleChange} />
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                     <div className="form-group">
@@ -58,7 +59,7 @@ class CreatePost extends Component {
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </section>
