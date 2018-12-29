@@ -27,18 +27,19 @@ import { createStore, applyMiddleware, compose } from 'redux'
 import rootReducer from './store/reducers/rootReducer'
 import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
-import CreatePost from './components/CreatePost'
-import { reduxFirestore, getFirestore } from 'redux-firestore'
-import { reactReduxFirebase, getFirebase } from 'react-redux-firebase'
+import CreatePost from './components/Dashboard/Blog/CreatePost'
+import { reduxFirestore, getFirestore } from 'redux-firestore';
+import { reactReduxFirebase, getFirebase } from 'react-redux-firebase';
 import fbConfig from './config/fbConfig'
+import Dashboard from './components/Dashboard/Dashboard'
 
 const store = createStore(rootReducer,
   compose(
-    applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),
-    reduxFirestore(fbConfig),
-    reactReduxFirebase(fbConfig)
+    applyMiddleware(thunk.withExtraArgument({getFirebase, getFirestore})),
+    reactReduxFirebase(fbConfig), // redux binding for firebase
+    reduxFirestore(fbConfig) // redux bindings for firestore
   )
-)
+);
 
 class Root extends React.Component {
   render() {
@@ -65,12 +66,14 @@ class Root extends React.Component {
 			  <Route path={`${process.env.PUBLIC_URL}/download`} component={Download}/>
 			  <Route path={`${process.env.PUBLIC_URL}/coming-soon`} component={ComingSoon}/>
 			  <Route path={`${process.env.PUBLIC_URL}/create-post`} component={CreatePost} />
+        <Route path={`${process.env.PUBLIC_URL}/dashboard`} component={Dashboard} />
 			  <Route component={NoMatch} />
 			</Switch>
 		</BrowserRouter>
   	);
   }
  }
+
 
 ReactDOM.render(<Provider store={store}><Root /></Provider>, document.getElementById('root'));
 

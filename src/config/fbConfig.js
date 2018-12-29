@@ -12,6 +12,6 @@ import 'firebase/auth'
     messagingSenderId: "119763921099"
   };
   firebase.initializeApp(config);
-  firebase.firestore().settings({ })
+  firebase.firestore().settings({ timestampsInSnapshots: true })
 
   export default firebase

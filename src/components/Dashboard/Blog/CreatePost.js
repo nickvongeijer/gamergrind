@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { createPost } from '../store/actions/blogActions'
+import { createPost } from '../../../store/actions/blogActions'
 
 class CreatePost extends Component {
     state = {
@@ -17,12 +17,14 @@ class CreatePost extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         //console.log('submit')
-        this.props.createPost();
+        this.props.createPost(this.state);
+        this.props.history.push('/');
     }
-    
+
     render() {
         console.log('create post');
         return (
+          <div>
             <section id="contact" className="contact">
                 <div className="contact-decor">
                     <div className="contact-circle1"><img src="assets/images/main-banner12.png" alt="" /></div>
@@ -47,10 +49,10 @@ class CreatePost extends Component {
                                         </div>
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" className="form-control" id="image" placeholder="IMAGE UPLOAD" required="required" />
+                                        <input type="text" className="form-control" id="image" placeholder="IMAGE UPLOAD" required="required" onChange={this.handleChange} />
                                     </div>
                                     <div className="form-group">
-                                        <textarea className="form-control" id="content" rows="4" placeholder="Content" required="required" onChange={this.handleChange}></textarea>
+                                        <textarea className="form-control" id="content" rows="4" placeholder="Content" required="required" onChange={this.handleChange} ></textarea>
                                     </div>
                                     <div className="form-button">
                                         <button type="submit" className="btn btn-custom theme-color">Post</button>
@@ -63,6 +65,7 @@ class CreatePost extends Component {
                     </div>
                 </div>
             </section>
+          </div>
         )
     }
 }

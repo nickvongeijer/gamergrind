@@ -2,7 +2,7 @@ import React from 'react';
 
 
 class Footer extends React.Component {
-  
+
   componentWillMount() {
         (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -14,7 +14,7 @@ class Footer extends React.Component {
     }
 
   render() {
-		
+
   	return (
       <div>
     		<section className="p-0">
@@ -70,7 +70,7 @@ class Footer extends React.Component {
         </section>
 
         <div className="copyright-section index-footer">
-           <p>2018-19 copyright by themeforest powered by pixel strap</p>
+           <p>2019 NXTLVL TECH</p>
         </div>
 
         <div className="tap-top">
@@ -83,8 +83,8 @@ class Footer extends React.Component {
           <div className="fb-customerchat"
               page_id="2123438804574660"
               theme_color="#18e7d3"
-              logged_in_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?"
-              logged_out_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?">
+              logged_in_greeting="Hi! Welcome to NXTLVL TECH  How can we help you?"
+              logged_out_greeting="Hi! Welcome to NXTLVL TECH  How can we help you?">
           </div>
       </div>
   	);

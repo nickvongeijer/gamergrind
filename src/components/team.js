@@ -27,9 +27,9 @@ class Team extends React.Component {
 
     // Dynamic Team Members Easy to Update
     let data = [
-        {name: 'mark jkcno', designation:'designer', photo:'1.jpg', facebook:'#', google:'#', twitter:'#', instagram:'#', rss:'#'},
-        {name: 'john doe', designation:'devloper', photo:'15.jpg', facebook:'#', google:'#', twitter:'#', instagram:'#', rss:'#'},
-        {name: 'johanson let', designation:'ux designer', photo:'22.jpg', facebook:'#', google:'#', twitter:'#', instagram:'#', rss:'#'},
+        {name: 'Danny Alonso', designation:'VP Creative Director', photo:'1.jpg', facebook:'#', google:'#', twitter:'#', instagram:'#', rss:'#'},
+        {name: 'Michael Cuarezma', designation:'CCO', photo:'15.jpg', facebook:'#', google:'#', twitter:'#', instagram:'#', rss:'#'},
+        {name: 'Derik Alonso', designation:'COO', photo:'22.jpg', facebook:'#', google:'#', twitter:'#', instagram:'#', rss:'#'},
         {name: 'Walo Boni', designation:'app devloper', photo:'1.jpg', facebook:'#', google:'#', twitter:'#', instagram:'#', rss:'#'},
         {name: 'John Shipmen', designation:'app designer', photo:'22.jpg', facebook:'#', google:'#', twitter:'#', instagram:'#', rss:'#'},
         {name: 'Robert Tomkins', designation:'ceo', photo:'15.jpg', facebook:'#', google:'#', twitter:'#', instagram:'#', rss:'#'},
@@ -62,7 +62,7 @@ class Team extends React.Component {
           </div>
         );
     });
-		
+
   	return (
   		<section id="team" className="team">
            <div className="team-decor">

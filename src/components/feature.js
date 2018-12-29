@@ -3,7 +3,7 @@ import React from 'react';
 
 class Feature extends React.Component {
   render() {
-		
+
   	return (
   		<section id="feature" className="feature">
          <div className="feature-decor">
@@ -17,7 +17,7 @@ class Feature extends React.Component {
                <div className="offset-lg-4 col-lg-8">
                   <div className="row">
                      <div className="col-sm-12 mrgn-md-top">
-                        <h2 className="title">features of<span> tovo</span></h2>
+                        <h2 className="title">features of<span> GamersGrind</span></h2>
                      </div>
                      <div className="col-12 col-md-6">
                         <ul className="feature-style">

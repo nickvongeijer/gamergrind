@@ -99,9 +99,4 @@ const mapStateToProps = (state) => {
    }
 }
 
-export default compose(
-  connect(mapStateToProps),
-  firestoreConnect([
-    { collection: 'posts' }
-  ])
-)(Blog);
+export default connect(mapStateToProps)(Blog)
