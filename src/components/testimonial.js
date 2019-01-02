@@ -16,7 +16,7 @@ class Testimonial extends React.Component {
             dots:true,
             nav:false
         },
-        991:{
+        991:{ -
             items:1,
             margin:15,
         },
@@ -27,7 +27,7 @@ class Testimonial extends React.Component {
 
     // Dynamic Testimonial Easy to Update
     let data = [
-      {name: 'mark jkcno', designation:'designer', photo:'22.jpg', description:'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.Contrary to popular belief, Lorem Ipsum is not simply random text.'},
+      {name: 'mark jkcno', designation:'designer', photo:'22.jpg', description:''},
       {name: 'John Shipmen', designation:'Lead Developer', photo:'15.jpg', description:'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.Contrary to popular belief, Lorem Ipsum is not simply random text.'},
       {name: 'Adegoke Yusuff', designation:'Content Writer', photo:'1.jpg', description:'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.Contrary to popular belief, Lorem Ipsum is not simply random text. '},
     ];

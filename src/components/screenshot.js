@@ -4,7 +4,7 @@ import OwlCarousel from 'react-owl-carousel';
 
 class ScreenShot extends React.Component {
   render() {
-  	
+
   		// OwlCarousel Option for Screenshot
   		const options = {
 		    0:{
@@ -56,10 +56,6 @@ class ScreenShot extends React.Component {
 		                  <div className="screenshot-item"><img src="assets/images/app/5.jpg" alt="app" /></div>
 		                  <div className="screenshot-item"><img src="assets/images/app/6.jpg" alt="app" /></div>
 		                  <div className="screenshot-item"><img src="assets/images/app/7.jpg" alt="app" /></div>
-		                  <div className="screenshot-item"><img src="assets/images/app/8.jpg" alt="app" /></div>
-		                  <div className="screenshot-item"><img src="assets/images/app/9.jpg" alt="app" /></div>
-		                  <div className="screenshot-item"><img src="assets/images/app/10.jpg" alt="app" /></div>
-		                  <div className="screenshot-item"><img src="assets/images/app/11.jpg" alt="app" /></div>
 		                  <div className="screenshot-item"><img src="assets/images/app/1.jpg" alt="app" /></div>
 		               </OwlCarousel>
 		            </div>

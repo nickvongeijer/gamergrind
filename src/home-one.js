@@ -36,11 +36,11 @@ class HomeOne extends React.Component {
 			            <div className="home-contain">
 			               <div>
 			                  <img src="assets/images/logoimage.png" alt="caption-img" className="caption-img" />
-			                  <h4>Landing page for</h4>
+			                  <h4></h4>
 			                  <h1><span className="f-bold">G</span>amers<span className="f-bold">G</span>rind
 			                     <span className="f-bold f-color"></span>
 			                  </h1>
-			                  <p>Enhance your business ideas with Powerful, Responsive, Elegant TOVO Theme.</p>
+			                  <p>Gamer’s Grind will allow video game enthusiasts a chance to win cash and prizes when playing the video games they love</p>
 			                  <a href={null}><img src="assets/images/appstore.png" alt="appstore" className="store" /></a>
 			                  <a href={null}><img className="ml-10 store" src="assets/images/play-store.png" alt="play-store" /></a>
 			               </div>
@@ -74,10 +74,10 @@ class HomeOne extends React.Component {
 			<Blog />
 
 			{/*Price Component*/}
-			<Price />
+
 
 			{/*Testimonial Component*/}
-			<Testimonial />
+			
 
 			{/*Contact Component*/}
 			<Contact />

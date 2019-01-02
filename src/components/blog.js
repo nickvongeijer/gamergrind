@@ -71,7 +71,7 @@ class Blog extends React.Component {
          <div className="container">
             <div className="row">
                <div className="col-sm-12">
-                  <h2 className="title">latest <span>blog</span></h2>
+                  <h2 className="title">GAMERS GRIND <span>NEWS</span></h2>
                </div>
                <div className="col-sm-12">
                   <OwlCarousel
@@ -100,3 +100,9 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps)(Blog)
+/*export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([
+    { collection: 'posts' }
+  ])
+)(Blog)*/

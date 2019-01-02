@@ -73,7 +73,7 @@ class Team extends React.Component {
            <div className="container">
               <div className="row ">
                  <div className="col-sm-12">
-                    <h2 className="title">our <span>smart team</span></h2>
+                    <h2 className="title">our <span>Gamers Grind team</span></h2>
                  </div>
                  <div className="col-sm-12">
                     <div>
