@@ -6,22 +6,22 @@ class Testimonial extends React.Component {
   render() {
     // OwlCarousel Option for Testimonial
     const options = {
-        0:{
-            items:1,
-            dots:true,
-            nav:false
+        0: {
+          items: 1,
+          dots: true,
+          nav: false
         },
-        600:{
-            items:1,
-            dots:true,
-            nav:false
+        600: {
+          items: 1,
+          dots: true,
+          nav: false
         },
-        991:{ -
-            items:1,
-            margin:15,
+        991: {
+          items: 1,
+          margin: 15,
         },
-        1000:{
-            items:1
+        1000: {
+          items: 1
         }
     };
 
