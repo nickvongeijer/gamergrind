@@ -48,8 +48,8 @@ class Root extends React.Component {
   	return(
   		<BrowserRouter basename={'/'} >
 		  	<Switch>
-			  <Route exact path={`${process.env.PUBLIC_URL}/`} component={App}/>
-			  <Route path={`${process.env.PUBLIC_URL}/home-one`} component={HomeOne}/>
+			  <Route path={`${process.env.PUBLIC_URL}/old-landing`} component={App}/>
+			  <Route exact path={`${process.env.PUBLIC_URL}/`} component={HomeOne}/>
 			  <Route path={`${process.env.PUBLIC_URL}/home-two`} component={HomeTwo}/>
 			  <Route path={`${process.env.PUBLIC_URL}/home-three`} component={HomeThree}/>
 			  <Route path={`${process.env.PUBLIC_URL}/blog-details`} component={BlogDetails}/>
